@@ -98,7 +98,8 @@ RUN set -ex; \
         \) -exec rm -rf '{}' +; \
 	rm -f get-pip.py
 
-RUN pip install -i https://mirrors.aliyun.com/pypi/simple/ Cython  \
+RUN pip install -i https://mirrors.aliyun.com/pypi/simple/ Django==2.0.5  \
+    && pip install -i https://mirrors.aliyun.com/pypi/simple/ Cython  \
     && pip install -i https://mirrors.aliyun.com/pypi/simple/ requests  \
     && pip install -i https://mirrors.aliyun.com/pypi/simple/ jieba  \
     && pip install -i https://mirrors.aliyun.com/pypi/simple/ fasttext  \
