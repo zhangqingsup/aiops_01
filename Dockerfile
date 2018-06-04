@@ -107,6 +107,6 @@ RUN pip install -i https://mirrors.aliyun.com/pypi/simple/ Django==2.0.5  \
     && pip install -i https://mirrors.aliyun.com/pypi/simple/ pyLDAvis
 
 EXPOSE 19999
-CMD ["python3"]
+CMD ["tail -f /etc/hosts"]
 
 
